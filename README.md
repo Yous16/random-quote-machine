@@ -1,2 +1,2 @@
 # random-quote-machine
- Random quote machine with react. FreeCodeCamp
+ Random quote machine with bootstrap FreeCodeCamp
