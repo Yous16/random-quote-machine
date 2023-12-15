@@ -30,7 +30,8 @@ const generateQuote = () => {
   let randomIndex = Math.floor(Math.random() * quoteSize);
   let randomQuoteData = QUOTES[randomIndex];
 
-  let twitterLink = "https://twitter.com/intent/tweet?hashtags=quotes&amp;related=freecodecamp&amp;text=%22"
+  let twitterLink =
+    "https://twitter.com/intent/tweet?hashtags=quotes&amp;related=freecodecamp&amp;text=%22";
 
   let quoteInApiFormat = randomQuoteData.quote.replace(/ /g, "%20");
   twitterLink += quoteInApiFormat;
@@ -42,4 +43,3 @@ const generateQuote = () => {
   document.getElementById("text").innerText = randomQuoteData.quote;
   document.getElementById("author").innerText = randomQuoteData.author;
 };
-
